@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flash Cards</title>
-  <link rel="manifest" href="/manifest.json">
-  <link rel="icon" type="image/png" href="/icons/icon-192x192.png">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/png" href="./icons/icon-192x192.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Flash Cards">
-  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192x192.png">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -470,16 +470,16 @@
     }
 
     document.getElementById('socialBook').addEventListener('click', () => {
-      setActiveBook('socialBook', '/60book.json');
+      setActiveBook('socialBook', './60book.json');
     });
 
     document.getElementById('politicalBook').addEventListener('click', () => {
-      setActiveBook('politicalBook', '/inflamedSurface.json');
+      setActiveBook('politicalBook', './inflamedSurface.json');
     });
 
     // تحميل البيانات عند تحميل الصفحة (الكتاب الاجتماعي افتراضيًا)
     document.addEventListener('DOMContentLoaded', () => {
-      setActiveBook('socialBook', '/60book.json');
+      setActiveBook('socialBook', './60book.json');
     });
   </script>
   <a href="https://www.flaticon.com/free-icons/board-game" title="board game icons">Board game icons created by Ina Mella - Flaticon</a>
